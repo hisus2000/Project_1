@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nguyễn Đức Hiền</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="time.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-9" style="left: 15px">
+                    <img src="./img/spkt.png" alt="" style="width: 50%;">
+                </div>
+                <div class="col-md-3 header_banner">
+                    <a href="login.html"><img src="./img/logo.jpg" alt="" class="mx-auto d-block header_banner-img" style="width: 100%;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="center">Phòng Khách</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="pos-f-t">
+                    <div class="card">
+                        <div class="clock-wrap">
+                            <div class="clock pro-0">
+                                <span class="count">0</span>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <div class="input">
+                                <input class="input-num" type="number" min="1" placeholder="Enter Minute"><input data-action="start" class="input-btn" type="button" value="Start">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                </div>
+
+            </div>
+            <div class="col-md-9">
+                <div class="col-md-9 ">
+                    <div class="container text-center ">
+                        <div class="row ">
+                            <div class="col-md-6">
+                                <div class="card ">
+                                    <img id="LivingRoom_LedId_1" class="card-img-top" src="./img/lightoff.jpg " alt="Card image " style="width:40% ">
+                                    <div class="card-bodys">
+                                        <h6>Đèn Trần</h6>
+                                        <button href="#" class="btn btn-primary" id="btnOnId_01">ON</button>
+                                        <button href="#" class="btn btn-secondary" id="btnOffId_01">OFF</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card ">
+                                    <img id="LivingRoom_FanId_1" class="card-img-top" src="./img/fanoff.jpg " alt="Card image " style="width:67% ">
+                                    <div class="card-bodys">
+                                        <h6>Quạt Trần</h6>
+                                        <button href="#" class="btn btn-primary" id="btnOnId_02">ON</button>
+                                        <button href="#" class="btn btn-secondary" id="btnOffId_02">OFF</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div id="sliderTronId_01" class="round-slider" style="margin: 40px;">0</div>
+                                    <div class="card-body">
+                                        <h6 style="text-align: center;">Temperature ('C')</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div id="sliderTronId_02" class="round-slider" style="margin: 40px;">0</div>
+                                    <div class="card-body">
+                                        <h6 style="text-align: center;">Huminity (%)</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="main.js"></script>
+    <script src="time.js"></script>
+
+</body>
+
+</html>
