@@ -1,7 +1,6 @@
 #include <WiFi.h>
 #include <FirebaseESP32.h>
 #include <SimpleDHT.h>
-#include "time.h"
 #define WIFI_SSID "ConMeoBeo2.4GHz"
 #define WIFI_PASSWORD "choduchien"
 #define FIREBASE_HOST "https://project-1-44bc6-default-rtdb.firebaseio.com/"
